@@ -1,0 +1,28 @@
+cn04-24.12090ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12093ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12091ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12092ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12117ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12119ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12121ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12122ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+2,2.30590987 
+1,2.30563712 
+4,2.31055403 
+5,2.31053996 
+6,2.31056499 
+7,2.31051993 
+8,2.31054592 
+3,2.31055593 
+9,2.31053591 
+10,2.31046605 
+11,2.31052208 
+12,2.33142400 
+13,2.33101392 
+14,2.33095288 
+15,2.33095002 
+16,2.33047390 
+17,2.33095193 
+18,2.33054209 
+19,2.39956212 
+0,2.40047598 

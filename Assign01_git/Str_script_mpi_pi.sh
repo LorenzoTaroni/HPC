@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 echo "1,2 " > time_elaps_strong.txt
 

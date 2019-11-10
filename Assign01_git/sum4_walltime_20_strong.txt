@@ -1,0 +1,29 @@
+cn04-24.12842ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12844ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12843ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12845ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12868ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12865ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12867ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn04-24.12864ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+1573402458.94595003 
+1573402459.84821796 
+1573402460.75244904 
+1573402461.71565008 
+1573402462.56225395 
+1573402463.46628904 
+1573402464.37157702 
+1573402465.33786988 
+1573402466.17794704 
+1573402467.08290911 
+1573402467.98675489 
+1573402468.89158106 
+1573402469.79468989 
+1573402470.70722795 
+1573402471.61192799 
+1573402472.50951791 
+1573402473.42019892 
+1573402474.32007599 
+1573402475.22227001 
+The sum of numbers between 1 and 8000000000 is 8239071073485379278 
+18.08791709 
