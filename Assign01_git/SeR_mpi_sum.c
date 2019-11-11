@@ -166,7 +166,7 @@ int main ( int argc , char *argv[ ] )
 
      FILE * fp2;
      fp2 = fopen ("T_comp.txt", "w+");
-     fprintf(fp2, "%10.10f", end_time_T_comp - start_time_T_comp );
+     fprintf(fp2, "%10.15f", end_time_T_comp - start_time_T_comp );
      fclose(fp2);
 
      FILE * fp3;

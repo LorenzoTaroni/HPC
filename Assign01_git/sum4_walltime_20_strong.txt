@@ -1,21 +1,29 @@
-1573402458.94595003 
-1573402459.84821796 
-1573402460.75244904 
-1573402461.71565008 
-1573402462.56225395 
-1573402463.46628904 
-1573402464.37157702 
-1573402465.33786988 
-1573402466.17794704 
-1573402467.08290911 
-1573402467.98675489 
-1573402468.89158106 
-1573402469.79468989 
-1573402470.70722795 
-1573402471.61192799 
-1573402472.50951791 
-1573402473.42019892 
-1573402474.32007599 
-1573402475.22227001 
-The sum of numbers between 1 and 8000000000 is 8239071073485379278 
-18.08791709 
+cn07-36.5523ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5525ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5524ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5526ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5543ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5544ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5546ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-36.5547ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+1573486974.46889210 
+1573486975.37298608 
+1573486976.29538608 
+1573486977.18119502 
+1573486978.16062593 
+1573486978.99140000 
+1573486979.89347506 
+1573486980.79915309 
+1573486981.80985689 
+1573486982.60893011 
+1573486983.52336502 
+1573486984.41748405 
+1573486985.41062903 
+1573486986.23911905 
+1573486987.50050807 
+1573486988.03715491 
+1573486988.94131207 
+1573486989.84592795 
+1573486990.75018501 
+The sum of numbers between 1 and 8000000000 is 8239071157485379278 
+18.09171510 

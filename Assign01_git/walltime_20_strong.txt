@@ -1,20 +1,28 @@
-1,0.01207995 
-2,0.01184106 
-4,0.01200891 
-5,0.01316214 
-6,0.01261616 
-7,0.01255298 
-8,0.01268315 
-9,0.01259708 
-3,0.01156497 
-10,0.01253390 
-11,0.01251888 
-12,0.01245093 
-13,0.01250410 
-14,0.01243114 
-15,0.01200795 
-17,0.01207495 
-16,0.01233602 
-18,0.01207590 
-0,0.01300502 
-19,0.01321292 
+cn01-31.2296ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2297ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2298ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2299ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2316ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2317ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2318ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn01-31.2320ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+3,0.11979008 
+1,0.11908102 
+2,0.11905599 
+4,0.11894202 
+5,0.11962605 
+6,0.11901283 
+7,0.12092018 
+8,0.12092590 
+9,0.12090182 
+10,0.12071705 
+11,0.11944199 
+12,0.11906505 
+13,0.11933613 
+14,0.11927414 
+15,0.11907196 
+19,0.11916804 
+16,0.11909699 
+17,0.11908293 
+18,0.12016988 
+0,0.11910987 
