@@ -107,7 +107,7 @@ int main ( int argc , char *argv[ ] )
                                                                                                               //
   long long int partial_sum = 0;                                                                              //
   long long int i;                                                                                            //
-  for (i = 1*(myid + 1); i < partial_N*(myid + 1)+(long long int)(1); i++) {                    //parallel part                             
+  for (i = 1+(myid*partial_N); i < partial_N*(myid + 1)+(long long int)(1); i++) {                    //parallel part                             
      
     partial_sum += i; 
                                                                                                               //
@@ -166,7 +166,7 @@ int main ( int argc , char *argv[ ] )
 
      FILE * fp2;
      fp2 = fopen ("T_comp.txt", "w+");
-     fprintf(fp2, "%10.15f", end_time_T_comp - start_time_T_comp );
+     fprintf(fp2, "%10.12f", end_time_T_comp - start_time_T_comp );
      fclose(fp2);
 
      FILE * fp3;

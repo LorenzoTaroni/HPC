@@ -17,7 +17,7 @@ for procs in 1 2 4 8 16 20 ; do
 
   echo -n ${procs}, >> time_elaps_strong.txt
 
-  /usr/bin/time -a -o time_elaps_strong.txt -f %e mpirun -np ${procs} mpi_pi.x 100000000 > walltime_${procs}_strong.txt
+  /usr/bin/time -a -o time_elaps_strong.txt -f %e mpirun -np ${procs} mpi_pi.x 1000000000 > walltime_${procs}_strong.txt
   
 done
 
@@ -49,7 +49,7 @@ mpicc -o mpi_pi.x mpi_pi.c
 
   echo -n 20,1000000000000, >> time_elaps_weak.txt
 
-  /usr/bin/time -a -o time_elaps_weak.txt -f %e mpirun -np 20 mpi_pi.x 2000000000 > walltime_20_12_weak.txt
+  /usr/bin/time -a -o time_elaps_weak.txt -f %e mpirun -np 20 mpi_pi.x 200000000 > walltime_20_12_weak.txt
 
 # Str_script_mpi_sum.sh
 
