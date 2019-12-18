@@ -5,7 +5,7 @@
 
 cd $PBS_O_WORKDIR
 
-module load gcc/4.8.2
+module load gnu/4.9.2
 
 ./Str_script_es0.sh
 
