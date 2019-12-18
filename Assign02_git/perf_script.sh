@@ -13,8 +13,8 @@ gcc -lrt -std=c99 -fopenmp -o 06_touch_by_all.x 06_touch_by_all.c
 
 export OMP_NUM_THREADS=20
 
-sudo perf stat -r 100 -o perf01.txt -e cycles:u,instructions:u,cache-references:u,cache-misses:u,L1-dcache-load-misses:u ./01_array_sum.x $N 
+perf stat -r 100 -o perf01.txt -e cycles:u,instructions:u,cache-references:u,cache-misses:u,L1-dcache-load-misses:u ./01_array_sum.x $N 
 
-sudo perf stat -r 100 -o perf06.txt -e cycles:u,instructions:u,cache-references:u,cache-misses:u,L1-dcache-load-misses:u ./06_touch_by_all.x $N
+perf stat -r 100 -o perf06.txt -e cycles:u,instructions:u,cache-references:u,cache-misses:u,L1-dcache-load-misses:u ./06_touch_by_all.x $N
 
 #done

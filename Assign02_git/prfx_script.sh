@@ -1,6 +1,6 @@
 #!/bin/bash
 
-N=100000
+N=10000
 
 echo -n > prfx_time.txt
 
