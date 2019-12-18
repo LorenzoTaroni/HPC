@@ -11,6 +11,8 @@ module load gnu/4.9.2
 
 ./Str_mean_es0.sh
 
+./perf_script.sh
+
 ./prfx_script.sh
 
-./perf_script.sh
+
