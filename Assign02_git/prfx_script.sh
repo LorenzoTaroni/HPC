@@ -6,7 +6,7 @@ echo -n > prfx_time.txt
 
 
 
-gcc -std=c99 -o prfx_sum.x prfx_sum.c
+gcc -lrt -std=c99 -o prfx_sum.x prfx_sum.c
 
 for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
@@ -18,7 +18,7 @@ done
 
 
 
-gcc -std=c99 -fopenmp -DOMP -o prfx_sum.x prfx_sum.c
+gcc -lrt -std=c99 -fopenmp -DOMP -o prfx_sum.x prfx_sum.c
 
 for threads in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 

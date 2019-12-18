@@ -6,9 +6,9 @@ N=1000000000
 
 #a= '(?<=<).*?(?=>)'
 
-gcc -std=c99 -o 01_array_sum.x 01_array_sum.c
+gcc -lrt -std=c99 -o 01_array_sum.x 01_array_sum.c
 
-gcc -std=c99 -o 06_touch_by_all.x 06_touch_by_all.c
+gcc -lrt -std=c99 -o 06_touch_by_all.x 06_touch_by_all.c
 
 
 echo -n 1, > time_elaps_as.txt
@@ -24,9 +24,9 @@ echo 1 >> walltime_as.txt
 echo 1 >> walltime_tba.txt
 
 
-gcc -std=c99 -fopenmp -o 01_array_sum.x 01_array_sum.c
+gcc -lrt -std=c99 -fopenmp -o 01_array_sum.x 01_array_sum.c
 
-gcc -std=c99 -fopenmp -o 06_touch_by_all.x 06_touch_by_all.c
+gcc -lrt -std=c99 -fopenmp -o 06_touch_by_all.x 06_touch_by_all.c
 
 for threads in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
