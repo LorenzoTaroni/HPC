@@ -29,9 +29,9 @@
 
 double* prfxsum_S( double* x, int N);
 
-double* prfxsum_P( double* x, int N);
+//double* prfxsum_P( double* x, int N);
 
-//double* prfxsum_P_better( double* x, int N);
+double* prfxsum_P_better( double* b, int size);
 
 
 int main( int argc, char **argv )
@@ -88,9 +88,9 @@ int main( int argc, char **argv )
 
 #else
 
-  a = prfxsum_P( x, N );
+  //a = prfxsum_P( x, N );
 
-  //a = prfxsum_P_better( x, N );
+  a = prfxsum_P_better( x, N );
 
 #endif
 
@@ -106,14 +106,14 @@ int main( int argc, char **argv )
        "<%g> sec of min thread-time\n",
        S, tend - tstart, th_avg_time/nthreads, th_min_time );*/
 
-  for (int i = 0; i < N; ++i) {
+  /*for (int i = 0; i < N; ++i) {
 
     printf("%g ",a[i]);
 
   }
-  
+  */
 
-  printf("%g", a[N-1]);
+  //printf("%g", a[N-1]);
   
 
   //printf("\nTime: %g\n", tend - tstart);
@@ -154,50 +154,52 @@ double* prfxsum_S( double* x, int N){
 
 
 
-/*
-double* prfxsum_P_better( double* x, int N){
 
-double g = log10(N)/log10(2);
+double* prfxsum_P_better( double* b, int size){
 
-// Up Sweep fase
+double *a;
 
-  for (int d = 0; (double)(d) < g-1; ++d){
-
-   #pragma omp parallel for   
-    for (int k = 0; k < N-1; k += (int)(2**(double)(d+1)) ){
-
-      x[k+(int)(2**(double)(d+1)+1-1)] = x[k+(int)(2**(double)(d)-1)] + x[k+(int)(2**(double)(d))];
-
-    }
+if ( (a = (double*)malloc( size * sizeof(double) )) == NULL )
+  {
+    printf("I'm sorry, there is not enough memory to host %lu bytes\n", size * sizeof(double) );
+    return (double*)0;
   }
 
+double *suma;  
 
+#pragma omp parallel
+{
+    int ithread = omp_get_thread_num();   
 
-// Down Sweep fase
+    int nthreads = omp_get_num_threads();  
 
-  x[N-1] = 0;
+    #pragma omp single
+    suma = malloc(sizeof *suma * (nthreads+1)), suma[0] = 0;
 
-  for (int d = (int)(g)-1; d > 0; --d){
+    double s = 0;
 
-   #pragma omp parallel for  
-    for (int k = 0; k < N-1; k += (int)(2**(double)(d) + 1)){
+    #pragma omp for schedule(static) nowait
+    for (int i=0; i<size; i++) s += b[i], a[i] = s;
+    suma[ithread+1] = s;
 
-      double t = x[k+(int)(2**(double)(d)-1)];
-      x[k+(int)(2**(double)(d)-1)] = x[k+(int)(2**(double)(d))];
-      x[k+(int)(2**(double)(d))] = t + x[k+(int)(2**(double)(d))];
+    #pragma omp barrier
 
-    }
+    double offset = 0;
 
-  }
-
-  return x;
+    for(int i=0; i<(ithread+1); i++) offset += suma[i];
+    #pragma omp for schedule(static)
+    for (int i=0; i<size; i++) a[i] += offset;
 }
-*/
+free(suma);
+
+return a;
+}
 
 
 
 
 
+/*
 double* prfxsum_P( double* x, int N){
 
   double *a, *y, *b;
@@ -258,3 +260,4 @@ double* prfxsum_P( double* x, int N){
   return a;
 
 }
+*/
