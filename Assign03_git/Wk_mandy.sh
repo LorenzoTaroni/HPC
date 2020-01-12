@@ -14,7 +14,7 @@ echo -n > wmandy_time.txt
 
 
 
-gcc -o mandelbrot.x mandelbrot.c
+gcc -lrt -std=c99 -o mandelbrot.x mandelbrot.c
 
 for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
@@ -26,13 +26,15 @@ done
 
 
 
-gcc -fopenmp -DOMP -o mandelbrot.x mandelbrot.c
+gcc -lrt -std=c99 -fopenmp -DOMP -o mandelbrot.x mandelbrot.c
 
 for threads in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
   export OMP_NUM_THREADS=${threads}
 
-  input=("${nx}" "$(("${threads}"*"${ny}"))" "${xl}" "${yl}" "${xr}" "${yr}" "${imax}")
+  new=$(("${threads}"*"${ny}"))
+
+  input=("${nx}" "${new}" "${xl}" "${yl}" "${xr}" "${yr}" "${imax}")
 
 for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
