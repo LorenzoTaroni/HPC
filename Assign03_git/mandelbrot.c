@@ -1,3 +1,5 @@
+#define _GNU_SOURCE
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,7 +9,7 @@
 #include <omp.h>
 
 
-#define _GNU_SOURCE
+
 
 
 
