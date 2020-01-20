@@ -94,7 +94,7 @@ int main( int argc, char **argv ){
   int n; // Iteration counter
 
   #ifdef OMP
-  #pragma omp for schedule(dynamic) collapse(2)
+  #pragma omp for collapse(2)
   #endif
 
   for (j = 0; j < ny; ++j) {

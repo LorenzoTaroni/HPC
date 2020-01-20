@@ -18,7 +18,7 @@ echo -n > smandy_time.txt
 
 #echo $((${nx}*${ny}))
 
-gcc -lrt -std=c99 -o mandelbrot.x mandelbrot.c
+gcc -lrt -std=c99 -DTIME -o mandelbrot.x mandelbrot.c
 
 for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
@@ -30,7 +30,7 @@ done
 
 
 
-gcc -lrt -std=c99 -fopenmp -DOMP -o mandelbrot.x mandelbrot.c
+gcc -lrt -std=c99 -fopenmp -DOMP -DTIME -o mandelbrot.x mandelbrot.c
 
 for threads in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 
@@ -45,3 +45,18 @@ for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ; do
 done  
 
 done
+
+
+
+gcc -lrt -std=c99 -fopenmp -DOMP -DTth -o mandelbrot.x mandelbrot.c
+
+
+./mandelbrot.x "${input[@]}"  > th_dynamic.txt
+
+
+gcc -lrt -std=c99 -fopenmp -DOMP -DTth -o mandelbrot_no_dy.x mandelbrot_no_dy.c
+
+
+./mandelbrot_no_dy.x "${input[@]}"  > th_no_dynamic.txt
+
+
